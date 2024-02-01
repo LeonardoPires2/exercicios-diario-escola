@@ -1,0 +1,15 @@
+<html>
+<!-- Formate a variável “numero” para o seguinte formato: “(XX)_X_XXXX-XXXX”; -->
+<script>
+    const mascaraTelefone = (value) => {
+        if (!value) return ""
+        value = value.replace(/\D/g, '')
+        value = value.replace(/(\d{2})(\d)/, "($1) $2 ")
+        value = value.replace(/(\d)(\d{4})$/, "$1-$2")
+        return value
+    }
+
+    console.log(mascaraTelefone('5(1)9-876-543-21'))
+</script>
+
+</html

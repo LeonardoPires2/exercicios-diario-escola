@@ -1,0 +1,31 @@
+<html>
+<!-- Percorra o objeto clientes e mostre o nome da cada cliente da seguinte maneira:
+“ultimoSobrenome, primeiroNome”; -->
+<script>
+    var clientes = [{
+
+            'id': 1,
+            'nome': 'Luis Santos Silveira',
+            'idade': 18
+        },
+        {
+
+            'id': 2,
+            'nome': 'Ricardo Lopes Alves',
+            'idade': 30
+        },
+        {
+
+            'id': 3,
+            'nome': 'Gustavo Silva Junior',
+            'idade': 26
+        }
+    ]
+
+    for (let cliente of clientes) {
+        let pessoa = cliente.nome.split(' ');
+        console.log(pessoa[2] + ', ' + pessoa[0])
+    }
+</script>
+
+</html
